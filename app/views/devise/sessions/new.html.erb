@@ -1,0 +1,197 @@
+<!-- Login/Register/Forgot username/password Modal forms
+	-  Hidded by default to be opened through modal
+  -  For faster loading we put all forms at the bottom of page -->
+  
+  <!--Login buttons-->  
+  <div class="five columns offset-by-one">
+    <span class="hide-for-small space-b-50"></span>
+    <ul class="button-group radius right login-buttons">
+      <li><a href="#" data-reveal-id="login_panel" class="small secondary button radius"><i class="icon-user"></i> LOG IN</a></li>
+      <li><a href="#" data-reveal-id="register_panel" class="small button radius"><i class="icon-group"></i> SIGN UP</a></li>
+    </ul>
+  </div>
+  <!--end login buttons-->
+
+  
+  <div class="twelve columns">
+    <div class="row">
+      
+     <!--Form wrapper-->
+     <div class="five columns form-wrapper">
+      <div class="form-header">
+        <p class="lead text-resize">Serious dating with <strong>SweetDate4u</strong><br>Your perfect match is just a click away</p>
+      </div>
+      <!--Search form-->
+      <form action="#" method="post" class="custom form-search">
+        <div class="row">
+          <div class="five mobile-four columns">
+            <label class="right inline">I am:</label>
+          </div>
+          <div class="seven mobile-four columns">
+            <select class="expand">
+              <option selected="selected">Man</option>
+              <option>Woman</option>
+            </select>
+          </div>
+        </div><!--end row-->
+        <div class="row">
+          <div class="five mobile-four columns">
+            <label class="right inline">Searching for:</label>
+          </div>
+          <div class="seven mobile-four columns">
+            <select class="expand">
+              <option selected="selected">Woman</option>
+              <option>Man</option>
+            </select>
+          </div>
+        </div><!--end row-->
+        <div class="row">
+          <div class="five mobile-one columns">
+            <label class="right inline">Age:</label>
+          </div>
+          <div class="three mobile-one columns">
+            <select class="expand customDropdown">
+              <option selected="selected">18</option>
+              <option>19</option>
+            </select>
+          </div>
+          <div class="one mobile-one columns text-center">
+            <label class="inline">to</label>
+          </div>
+          <div class="three mobile-one columns">
+            <select class="expand customDropdown">
+              <option selected="selected">29</option>
+              <option>30</option>
+            </select>
+          </div>
+        </div><!--end row-->
+        
+        <div class="row">
+          <div class="seven offset-by-five columns"><button class="button radius"><i class="icon-search"></i> &nbsp;SEARCH</button></div>
+        </div>
+        <span class="notch"></span>
+      </form>
+      <!--end search form-->
+      <!--Form footer-->
+      <div class="form-footer silver-bg">
+        <p><em>or</em> <strong>choose from last profile entries</strong>
+          <span class="right hide-for-small">
+            <a href="#" id="profile-thumbs-prev"><i class="icon-circle-arrow-left icon-large"></i></a>&nbsp;
+            <a href="#" id="profile-thumbs-next"><i class="icon-circle-arrow-right icon-large"></i></a>
+          </span>
+        </p>
+        <div class="clearfix"></div>
+        
+        <div class="carousel-profiles responsive">
+          <ul id="profile-thumbs">
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_04.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_05.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_06.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_07.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_08.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_09.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_10.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_11.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_12.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/profile-carousel/thumb_13.jpg" alt=""></a></li>
+          </ul>
+        </div><!--end carousel-profiles-->
+      </div><!--end form-footer-->
+      
+    </div><!--end form-wrapper-->
+  </div><!--end row-->
+</div><!--end twelve-->
+
+
+
+
+<!-- POP-UP MODAL FORMS
+================================================ -->
+<!--Login panel-->
+<div id="login_panel" class="reveal-modal">
+  <div class="row">
+    <div class="twelve columns">
+      <h5 class="pink-text"><i class="icon-user icon-large"></i> SIGN IN YOUR ACCOUNT <span class="subheader right small-link"><a href="#" data-reveal-id="register_panel" class="radius secondary small button">CREATE NEW ACCOUNT</a></span></h5>
+    </div>
+    <form id="login_form" name="login_form" method="post" class="clearfix">
+      <div class="six columns">
+        <input type="text" id="username" name="username" class="inputbox" placeholder="Username" required>
+      </div>
+      <div class="six columns">
+        <input type="password" id="password" name="password" class="inputbox" placeholder="Password" required>
+      </div>
+      <p class="twelve columns">
+        <small><i class="icon-lock"></i> Your <a href="#">privacy</a> is important to us and we will never rent or sell your information.</small>
+      </p>
+      <div class="twelve columns">
+        <button type="submit" id="login" name="submit" class="radius secondary button"><i class="icon-unlock"></i> &nbsp;LOG IN</button> &nbsp; <a href="#" class="radius button facebook"><i class="icon-facebook-sign"></i> &nbsp;LOG IN WITH Facebook</a>
+      </div>
+    </form>
+    <div class="twelve columns"><hr>
+      <ul class="inline-list">
+        <li><small><a href="#" data-reveal-id="forgot_panel">FORGOT YOUR USERNAME?</a></small></li>
+        <li><small><a href="#" data-reveal-id="forgot_panel">FORGOT YOUR PASSWORD?</a></small></li>
+      </ul>
+    </div>
+  </div><!--end row-->
+  <a href="#" class="close-reveal-modal">×</a>
+</div><!--end login panel-->
+
+<!-- Register panel -->
+<div id="register_panel" class="reveal-modal">
+  <div class="row">
+    <div class="twelve columns">
+      <h5 class="pink-text"><i class="icon-magic icon-large"></i> CREATE ACCOUNT <span class="subheader right small-link"><a href="#" data-reveal-id="login_panel" class="radius secondary small button">ALREADY HAVE AN ACCOUNT?</a></span></h5>	
+    </div>
+    <form id="register_form" name="register_form" method="post">
+      <div class="six columns">
+        <input type="text" id="reg-username" name="user[username]" class="inputbox" placeholder="Username">
+      </div>
+      <div class="six columns">
+        <input type="text" id="fullname" name="user[nickname]" class="inputbox" placeholder="Your nickname">
+      </div>
+      <div class="twelve columns">
+        <input type="text" id="reg-email" name="user[email]" class="inputbox" placeholder="Your email">
+      </div>
+      <div class="six columns">
+        <input type="password" id="reg-password" name="user[password]" class="inputbox" placeholder="Desired password">
+      </div>
+      <div class="six columns">
+        <input type="password" id="confirm_password" name="user[password_confirmation]" class="inputbox" placeholder="Confirm password">
+      </div>
+      <div class="twelve columns">
+        <p><small>Check our <a href="#"><strong>terms and conditions</strong></a> before sign up. If you familiar with our terms, go ahead click CREATE MY ACCOUNT button.</small></p>
+        <button type="submit" id="signup" name="submit" class="radius alert button"><i class="icon-heart"></i> &nbsp;CREATE MY ACCOUNT</button>
+      </div>
+    </form>
+  </div><!--end row-->
+  <a href="#" class="close-reveal-modal">×</a>
+</div><!-- end register panel -->
+
+<!-- Forgot panel -->
+<div id="forgot_panel" class="reveal-modal">
+  <div class="row">
+    <div class="twelve columns">
+      <h5 class="pink-text"><i class="icon-lightbulb icon-large"></i> FORGOT YOUR DETAILS?</h5>
+    </div>
+    <form id="forgot_form" name="forgot_form" method="post" class="clearfix">
+    <div class="twelve columns">
+      <input type="text" id="forgot-email" name="email" class="inputbox" placeholder="Email Address">
+      <button type="submit" id="recover" name="submit" class="radius secondary button">SEND MY DETAILS! &nbsp;<i class="icon-envelope"></i></button>
+    </div>
+    </form>
+    <div class="twelve columns"><hr>
+      <small><a href="#" data-reveal-id="login_panel" class="radius secondary label">AAH, WAIT, I REMEMBER NOW!</a></small>
+    </div>
+  </div><!--end row-->
+  <a href="#" class="close-reveal-modal">×</a>
+</div><!-- end register panel -->
+<!-- end login register stuff -->
+
+<p id="btnGoUp">Go up</p>
+</div><!--end page-->  
+
+<!--END POP-UP MODAL FORMS-->

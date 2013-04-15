@@ -1,0 +1,99 @@
+/* -----------------------------------------
+   Styler for preview only
+----------------------------------------- */
+
+#styler{
+	/*width: 214px;*/width: 229px;
+	height: 355px;
+	background-image: url(styler_bg.png);
+	position: fixed;
+	left: -187px;
+	top: 150px;
+	z-index: 999;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 30px;
+}
+
+#styler-button{
+	width: 33px;
+	height: 156px;
+	position: absolute;
+	z-index: 91;
+	right: 10px;
+	top: 25px;
+}
+
+
+#styler #texture{
+	float: left;
+	clear: left;	
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 30px;
+}
+
+#styler #texture li{
+	background-image: url(styler-cb1.gif);
+	background-position: 0px 10px;
+	background-repeat: no-repeat; list-style: none;
+	line-height: 26px;
+	height: 26px;
+	float: left;
+	clear: left;
+	padding-left: 15px;
+}
+#styler #texture li:hover{
+	background-image: url(styler-cb2.gif);
+}
+
+#styler #texture  #selected{
+	background-image: url(styler-cb2.gif);	
+}
+#styler #texture  #selected a{
+	color: #cca247;
+}
+
+.styler-title{
+	float: left;
+	width: 100%;
+	clear: left;
+	margin-bottom: 15px;
+}
+
+
+
+.farbtastic {
+  position: relative;
+  float: left;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 130px;
+  height: 130px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 31px;
+  left: 31px;
+  width: 68px;
+  height: 68px;
+}
+.farbtastic .wheel {
+  background: url(wheel.png) no-repeat;
+  width: 130px;
+  height: 130px;
+}
+
+.farbtastic .overlay {
+  background: url(mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden;
+  background: url(marker.png) no-repeat;
+}
